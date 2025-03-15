@@ -4,11 +4,14 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Entry from "./components/Entry";
 import Home from "./components/Home";
 import reportWebVitals from "./reportWebVitals";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById("root") as HTMLElement);
 root.render(
   <React.StrictMode>
-    <Home />
+    <Router>
+      <Route path="/" element={<Entry />} />
+    </Router>
   </React.StrictMode>
 );
 

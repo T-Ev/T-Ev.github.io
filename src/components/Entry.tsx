@@ -8,7 +8,7 @@ function Entry() {
   const [value, setValue] = React.useState("**Hello world!!!**");
   console.log("hi");
 
-  const handleChange = (newValue) => {
+  const handleChange = (newValue: any) => {
     console.log("New value:", newValue);
     setValue(newValue);
   };
