@@ -2,10 +2,17 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import MDEditor from "@uiw/react-md-editor";
 
 function Entry() {
-  alert("hi");
+  const [value, setValue] = React.useState("**Hello world!!!**");
   console.log("hi");
+
+  const handleChange = (newValue) => {
+    console.log("New value:", newValue);
+    setValue(newValue);
+  };
+
   return (
     <div className="text-center py-5">
       <h1 className="display-4 mb-4">Welcome</h1>
@@ -14,6 +21,10 @@ function Entry() {
         <Link to="/home" className="text-decoration-none">
           projects
         </Link>
+      </p>
+      <p>
+        <MDEditor value={value} onChange={handleChange} />
+        <MDEditor.Markdown source={value} style={{ whiteSpace: "pre-wrap" }} />
       </p>
     </div>
   );
