@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 
 function Entry() {
   alert("hi");
+  console.log("hi");
   return (
     <div className="text-center py-5">
       <h1 className="display-4 mb-4">Welcome</h1>
