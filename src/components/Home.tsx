@@ -31,14 +31,7 @@ function Home() {
           <Routes>
             <Route path="/projects" element={<Projects />} />
             <Route path="/home" element={<Home />} />
-            <Route
-              path="/"
-              element={
-                <div className="d-flex justify-content-center align-items-center" style={{ minHeight: "80vh" }}>
-                  <h1 className="display-1 fw-bold text-center">WELCOME</h1>
-                </div>
-              }
-            />
+            <Route path="/" element={<Entry />} />
           </Routes>
         </Container>
       </div>

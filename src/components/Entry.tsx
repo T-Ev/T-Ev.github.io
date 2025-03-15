@@ -12,7 +12,7 @@ function Entry() {
         <Link to="/home" className="text-decoration-none">
           projects
         </Link>
-        !
+        <script>alert("hi");</script>!
       </p>
     </div>
   );
