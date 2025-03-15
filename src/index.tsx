@@ -12,6 +12,7 @@ root.render(
     <Router>
       <Routes>
         <Route path="/" element={<Entry />} />
+        <Route path="/home" element={<Home />} />
       </Routes>
     </Router>
   </React.StrictMode>

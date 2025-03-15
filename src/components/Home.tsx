@@ -29,7 +29,6 @@ function Home() {
       <Container className="flex-grow-1">
         <Routes>
           <Route path="/projects" element={<Projects />} />
-          <Route path="/home" element={<Home />} />
         </Routes>
       </Container>
     </div>
