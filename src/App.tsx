@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import Projects from "./components/Projects";
+import Home from "./components/Home";
 
 function App() {
   return (
@@ -15,7 +16,7 @@ function App() {
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="me-auto">
-                <Nav.Link as={Link} to="/">
+                <Nav.Link as={Link} to="/home">
                   Home
                 </Nav.Link>
                 <Nav.Link as={Link} to="/projects">
@@ -29,18 +30,12 @@ function App() {
         <Container className="flex-grow-1">
           <Routes>
             <Route path="/projects" element={<Projects />} />
+            <Route path="/home" element={<Home />} />
             <Route
               path="/"
               element={
-                <div className="text-center py-5">
-                  <h1 className="display-4 mb-4">Welcome</h1>
-                  <p className="lead">
-                    Welcome to my portfolio. Check out my{" "}
-                    <Link to="/projects" className="text-decoration-none">
-                      projects
-                    </Link>
-                    !
-                  </p>
+                <div className="d-flex justify-content-center align-items-center" style={{ minHeight: "80vh" }}>
+                  <h1 className="display-1 fw-bold text-center">WELCOME</h1>
                 </div>
               }
             />
