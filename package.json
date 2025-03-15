@@ -1,7 +1,7 @@
 {
   "name": "tj-evarts-landing",
   "version": "0.1.0",
-  "homepage": "https://T-Ev.github.io/build",
+  "homepage": "https://T-Ev.github.io/",
   "private": true,
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
