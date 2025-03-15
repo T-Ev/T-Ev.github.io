@@ -1,6 +1,6 @@
 # TJ Evart's Portfolio Site
 
-[![Tests](https://github.com/T-Ev/t-ev.github.io/actions/workflows/tests.yml/badge.svg)](https://github.com/T-Ev/portfolio/actions/workflows/tests.yml)
+[![Tests](https://github.com/T-Ev/T-Ev.github.io/actions/workflows/tests.yml/badge.svg)](https://github.com/T-Ev/T-Ev.github.io/actions/workflows/tests.yml)
 
 This repository contains the source code for TJ Evart's personal portfolio website. The site showcases my projects, skills, and professional experience.
 
