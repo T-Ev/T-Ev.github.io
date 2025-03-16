@@ -1,8 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import { Navbar, Nav, Container } from "react-bootstrap";
-import Projects from "./Projects";
-import Entry from "./Entry";
 
 function Home() {
   return (
@@ -26,11 +24,7 @@ function Home() {
         </Container>
       </Navbar>
 
-      <Container className="flex-grow-1">
-        <Routes>
-          <Route path="/projects" element={<Projects />} />
-        </Routes>
-      </Container>
+      <Container className="flex-grow-1"></Container>
     </div>
   );
 }

@@ -13,8 +13,12 @@
     -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     <script>
-      if (!window.location.search) {
+      if (!window.location.search?.sig) {
         window.location.href = "redirect.html";
+      } else {
+        window.sig = window.location.search.sig;
+        window.cont = window.location.search.cont;
+        window.history.pushState({}, document.title, window.location.pathname);
       }
     </script>
     <!--

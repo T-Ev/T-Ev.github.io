@@ -4,6 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Entry from "./components/Entry";
 import Home from "./components/Home";
 import reportWebVitals from "./reportWebVitals";
+import Projects from "./components/Projects";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById("root") as HTMLElement);
@@ -13,6 +14,7 @@ root.render(
       <Routes>
         <Route path="/" element={<Entry />} />
         <Route path="/home" element={<Home />} />
+        <Route path="/projects" element={<Projects />} />
       </Routes>
     </Router>
   </React.StrictMode>
