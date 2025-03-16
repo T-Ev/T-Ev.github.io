@@ -4,12 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Redirecting...</title>
+    <script src="https://unpkg.com/browser-signature@1.0.5/dist/browser-signature.umd.js"></script>
   </head>
   <body>
     <script>
       // Your script can run here
       (function () {
-        window.location = "/" + "?hithere=yes";
+        const signature = browserSignature();
+        const pages = [
+          { id: "1", title: "Page 1", content: "Content 1" },
+          { id: "2", title: "Page 2", content: "Content 2" },
+        ];
+
+        console.log("Current Browser Unique Signature: ", signature);
+        window.location = `/?sig=${escape(signature)}&cont=${escape(JSON.stringify(pages))}`;
       })();
     </script>
     Hi There
